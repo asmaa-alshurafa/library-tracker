@@ -1,19 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center"
     tools:context=".MainActivity">
-    <TextView
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:text="Hello World!"
-      app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintTop_toTopOf="parent" />
 
-  </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Library Tracker Project"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="6dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student: Asmaa Hisham ALshurafa (220232461)"
+        android:textSize="13sp"
+        android:textColor="@android:color/darker_gray"
+        android:layout_marginBottom="24dp" />
+
+    <Button
+        android:id="@+id/btnAddBook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add New Book"
+        android:layout_marginBottom="10dp" />
+
+    <Button
+        android:id="@+id/btnListBooks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="List All Books"
+        android:layout_marginBottom="10dp" />
+
+    <Button
+        android:id="@+id/btnSearchBook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search Book"
+        android:layout_marginBottom="10dp" />
+
+    <Button
+        android:id="@+id/btnRemoveBook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Remove Book" />
+
+</LinearLayout>
